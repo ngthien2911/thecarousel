@@ -28,108 +28,7 @@ const isDesktop = useMediaQuery({ query: '(min-width: 800px)' });
     }
 
     console.log(theslide);
-    
-    
-    // if(isMobile){return(
-    //     <div className='slider'>
-    //     <FaArrowAltCircleUp className='mobile-leftarrow' onClick={previous}/>
-    //     <FaArrowAltCircleDown className='mobile-rightarrow' onClick={next}/>
-    //     {Data.map((slide,index)=>{
-    //         return(
-    //             <div className={index===theslide ? 'mobile-active' : 'mobile-not-active'} key={index}>
-
-    //             {index === theslide &&(<img  src={slide.photo} alt="carousel image" className='mobile-image'></img>)}
-                
-    //             </div>
-    //         )
-    //     })}
-        
-    //     </div>
-    // )}
-    // else if(isTablet && !isMobile){return(
-    //     <div className='slider'>
-    //     <FaArrowAltCircleUp className='mobile-leftarrow' onClick={previous}/>
-    //     <FaArrowAltCircleDown className='mobile-rightarrow' onClick={next}/>
-    //     {Data.map((slide,index)=>{
-    //         return(
-    //             <div className={index===theslide ? 'mobile-active' : 'mobile-not-active'} key={index}>
-
-    //             {index === theslide &&(<img  src={slide.photo} alt="carousel image" className='mobile-image'></img>)}
-                
-    //             </div>
-    //         )
-    //     })}
-    //     {Data.map((slide,index)=>{
-    //         if(theslide+1 == length){return(
-    //             <div className={index==0 ? 'active' : 'not-active'} key={index}>
-    //                 {index ==0 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-    //             </div>
-    //         ) } 
-    //         else{return(
-    //             <div className={index===theslide +1 ? 'active' : 'not-active'} key={index}>
-    //                 {index === theslide+1 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}  
-    //             </div>
-    //                  )
-    //         }   
-    //     })}
-        
-    //     </div>
-    // )}
-
-    // else {return(
-    //     <div className='slider'>
-    //     <FaArrowAltCircleLeft className='leftarrow' onClick={previous}/>
-    //     <FaArrowAltCircleRight className='rightarrow' onClick={next}/>
-       
-    //     {Data.map((slide,index)=>{
-    //         return(
-                
-    //             <div className={index===theslide ? 'active' : 'not-active'} key={index}>
-    //                 {index === theslide &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-    //             </div>
-    
-    //         )
-    //     })}
-
-    //     {Data.map((slide,index)=>{
-    //         if(theslide+1 == length){return(
-    //             <div className={index==0 ? 'active' : 'not-active'} key={index}>
-    //                 {index ==0 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-    //             </div>
-    //         ) } 
-    //         else{return(
-    //             <div className={index===theslide +1 ? 'active' : 'not-active'} key={index}>
-    //                 {index === theslide+1 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}  
-    //             </div>
-    //                  )
-    //         }   
-    //     })}
-
-    //     {Data.map((slide,index)=>{
-    //         if(theslide+2>length){return(
-    //             <div className={index==theslide -2? 'active' : 'not-active'} key={index}>
-    //                 {index ==theslide-2 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-    //             </div>
-    //         )}
-    //         else if(theslide+2==length){return(
-    //             <div className={index==0 ? 'active' : 'not-active'} key={index}>
-    //                 {index ==0 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-    //             </div>
-    //         )}
-            
-        
-    //         else{return(
-    //             <div className={index===theslide +2  ? 'active' : 'not-active'} key={index}>
-    //                 {index === theslide +2 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}  
-    //             </div>
-    //         )}
-    //     })}
-       
-    //             </div>
-    // )}
-   
-    
-
+ 
 
     if(isDesktop){return(
         <div className='slider'>
@@ -197,33 +96,7 @@ const isDesktop = useMediaQuery({ query: '(min-width: 800px)' });
         })}
         
         </div>
-        // <div className='slider'>
-        // <FaArrowAltCircleUp className='mobile-leftarrow' onClick={previous}/>
-        // <FaArrowAltCircleDown className='mobile-rightarrow' onClick={next}/>
-        // {Data.map((slide,index)=>{
-        //     return(
-        //         <div className={index===theslide ? 'mobile-active' : 'mobile-not-active'} key={index}>
-
-        //         {index === theslide &&(<img  src={slide.photo} alt="carousel image" className='mobile-image'></img>)}
-                
-        //         </div>
-        //     )
-        // })}
-        // {Data.map((slide,index)=>{
-        //     if(theslide+1 == length){return(
-        //         <div className={index==0 ? 'active' : 'not-active'} key={index}>
-        //             {index ==0 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}
-        //         </div>
-        //     ) } 
-        //     else{return(
-        //         <div className={index===theslide +1 ? 'active' : 'not-active'} key={index}>
-        //             {index === theslide+1 &&(<img  src={slide.photo} alt="carousel image" id='image'></img>)}  
-        //         </div>
-        //              )
-        //     }   
-        // })}
         
-        // </div>
     )}
     else {return(
         <div className='tablet-slider'>
